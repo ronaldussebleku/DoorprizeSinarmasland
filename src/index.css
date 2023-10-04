@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.absolute-center {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.numbers {
+  @apply border-2 border-primary p-4 w-[88px] h-24 flex items-center justify-center rounded-md select-none;
+}
+
+.numbers-inactive {
+  @apply numbers bg-white text-slate-500 text-lg font-semibold text-center;
+}
+
+.numbers-active {
+  @apply numbers bg-primary text-white text-4xl font-bold;
+}
+
+.button-wrap {
+  @apply flex items-center justify-center w-full;
+}
+
+.button {
+  @apply bg-primary text-white text-lg font-semibold px-8 py-2 rounded-md;
+}
